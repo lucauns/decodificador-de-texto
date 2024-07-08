@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cor-principal : #0A3871; 
+    --cor-secundaria: #495057;
+    --cor-fundo-primaria: #F3F5FC; 
+    --cor-fundo-secundaria: #495057; 
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #D8DFE8 ;
+    font-family: "Inter";
+    padding-bottom: 1%;
+    padding-top: 1%;
+    
+}
+
+.textos {
+    padding: 0 5% 0% 15%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: stretch;
+    gap: 2rem;   
+    width: 100%;
+    
+}
+
+textarea {
+    background-color: #D8DFE8 ;
+    box-sizing: border-box;
+    width: 100%;
+    height: 37.5rem;
+    font-family: "Inter";
+    border: none;
+    font-size: 2rem;
+    
+    
+}
+
+
+
+.textos__entrada {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    justify-content: center;
+}
+
+.textos__mensagem {
+    color: var(--cor-principal);
+}
+
+.botao {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.botoes{
+    font-family: "Inter";
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    width: 20.5rem;
+    height: 4.2rem;
+    align-self: flex-start;
+    
+}
+
+.textos__saida {    
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+}
+
+.texto__resposta {
+    font-family: "Inter";
+    font-size: 1.5rem;
+}
+
+.textos__saida__elementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.textos__saida__elementos__subtexto {
+    font-size: 1rem;
+}
+
+.botao__copiar {
+    font-family: "Inter";
+    font-size: 1rem;
+    border-radius: 2rem;
+    width: 20.5rem;
+    height: 4.2rem; 
+}
+
+.botoes:hover {
+    background-color: var(--cor-principal);
+    color: #FFFFFF;
+}
+
+.botao__copiar:hover {
+    background-color: var(--cor-principal);
+    color: #FFFFFF;
+}
+
+@media (max-width:1200px) {
+    .textos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ilustracao {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ilustracao {
+        display: none;
+    }
+    .botao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

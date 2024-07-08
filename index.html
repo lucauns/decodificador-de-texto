@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CriptoLucas</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img src="./assets/Frame 6.png">
+        </header>
+
+        <main class="textos">
+            <section class="textos__entrada">
+                   <textarea class="textos__mensagem" placeholder="Digite aqui seu texto"></textarea>
+                   <p class="texto__aviso"> <img src="./assets/exclamacao.png"> Apenas letras minúsculas e sem acento</p>
+                   <div class="botao">
+                        <button class="botoes" onclick="criptografar()"> Criptografar</button>
+                        <button class="botoes" onclick="descriptografar ()"> Descriptogragar</button>
+                    </div>
+            </section>
+            <section class="textos__saida">
+                <p class="texto__resposta" id ="resultado"></p>
+                <div class="textos__saida__elementos"  id="resposta">
+                    <img class="ilustracao" src="./assets/High quality products 1 1.png">
+                    <p><strong>Nenhuma mensagem encontrada</strong></p>
+                    <p class="textos__saida__elementos__subtexto">Digite um texto que você deseja criptografar ou descriptogragar</p>
+                    
+                </div>
+                <button onclick="copiar()" class="botao__copiar" id="copia">Copiar</button>
+            </section>  
+        </main>
+
+        <footer></footer>
+        <script src="app.js" defer></script>
+    </body>
+
+</html>
